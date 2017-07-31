@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/indonesia"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="40sp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/judulBesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Destinasi Travel Terpopuler"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/judulKecil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judulBesar"
+                android:paddingBottom="5dp"
+                android:text="Temukan destinasimu disini"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_below="@+id/judulKecil"
+                android:id ="@+id/push_bali"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Bali"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                />
+
+            <Button
+                android:layout_below="@+id/judulKecil"
+                android:layout_toRightOf="@+id/push_bali"
+                android:id ="@+id/push_malang"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="Malang"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                />
+            <Button
+                android:layout_below="@+id/judulKecil"
+                android:layout_toRightOf="@+id/push_malang"
+                android:id ="@+id/push_lombok"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="Lombok"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                />
+            <Button
+                android:layout_below="@+id/push_bali"
+                android:id ="@+id/push_papua"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Papua"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                />
+            <Button
+                android:layout_below="@+id/push_bali"
+                android:layout_toRightOf="@+id/push_papua"
+                android:id ="@+id/push_ntt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:text="Nusa Tenggara Timur"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/horizontal_recycler_view_header"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textSize="@dimen/default_label_size"
+                    android:text="@string/horiz_drag_label"
+                    android:lines="1"
+                    />
+                <TextView
+                    android:id="@+id/horizontal_scroll_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textSize="@dimen/default_subtitle_size"
+                    android:text="0"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/horizontal_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="3"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

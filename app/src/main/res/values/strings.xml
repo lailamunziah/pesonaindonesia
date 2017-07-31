@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PesonaBeta2</string>
+
+    <string name="horiz_drag_label"> </string>
+    <string name="vert_drag_label">⇳ Drag Vertically</string>
+</resources>
