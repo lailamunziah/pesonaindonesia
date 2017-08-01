@@ -2,8 +2,20 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#00B9F2</color>
 
     <color name="spectrum_cyan">#00e0e0</color>
     <color name="spectrum_yellow">#f0e000</color>
+
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+
+    <color name="blue">#00abea</color>
+<color name="white">#ffffff</color>
+
+    <color name="colorblue">#4c71f5</color>
+
+    <color name="colorSub">#b0afaf</color>
+    <color name="colorTex">#585858</color>
+    <color name="colordevider">#64dad8d8</color>
 </resources>

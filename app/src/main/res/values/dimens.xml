@@ -7,4 +7,10 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="default_label_size">26sp</dimen>
     <dimen name="default_subtitle_size">22sp</dimen>
+
+
+    <!--Text Size-->
+
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="medium_text">18sp</dimen>
 </resources>

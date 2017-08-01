@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/indonesia"
-
     >
-
     <LinearLayout
+        android:id="@+id/welcome"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:baselineAligned="false"
         android:layout_marginLeft="80sp"
@@ -16,7 +20,7 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1">s
             <TextView
                 android:id="@+id/judulBesar"
                 android:layout_width="wrap_content"
@@ -152,4 +156,62 @@
         </RelativeLayout>
     </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/iklan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/welcome"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="80sp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menutab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/iklan"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="80sp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80000000"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorTextPrimary"
+                app:tabTextColor="@color/colorTextDisable"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_below="@+id/tablayout"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
+
+</ScrollView>

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/PesonaBeta2.iml" filepath="$PROJECT_DIR$/PesonaBeta2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/liboverscroll/liboverscroll.iml" filepath="$PROJECT_DIR$/liboverscroll/liboverscroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pesonaindonesia.iml" filepath="$PROJECT_DIR$/pesonaindonesia.iml" />
     </modules>
   </component>
 </project>
