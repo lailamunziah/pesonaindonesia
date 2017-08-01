@@ -7,22 +7,17 @@
 
     <GridView
         android:id="@+id/gridview_destinasi"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         android:columnWidth="200dp"
         android:drawSelectorOnTop="true"
         android:gravity="center"
         android:numColumns="auto_fit"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="5dp"
         android:focusable="true"
-        android:clickable="true"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/tab1"
-        android:textSize="30sp" />
+        android:clickable="true"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        />
+
 
 </RelativeLayout>

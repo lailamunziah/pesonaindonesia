@@ -31,9 +31,10 @@ import id.co.telkom.pesonabeta2.ImageItem;
 public class destinasiFragment extends DialogFragment{
     GridView gv;
 
-    String[] judul = {"Yogyakarta", "Bali", "Pulau Komodo"};
-    String[] view = {"110 view","110 view","110 view"};
-    int[] images = {R.drawable.destinasi_1, R.drawable.destinasi_2, R.drawable.destinasi_3};
+    String[] judul = {"Yogyakarta", "Bali", "Pulau Komodo", "Gili Trawangan" , "Surabaya", "Jakarta","Bandung","Medan","Palangkaraya", "Pulau Seribu"};
+    String[] view = {"115 Views","310 Views","110 Views","200 Views", "450 Views","110 Views","319 Views", "250 Views","100 Views","210 Views"};
+    int[] images = {R.drawable.destinasi_1, R.drawable.destinasi_2, R.drawable.destinasi_3, R.drawable.destinasi_4, R.drawable.destinasi_5,
+    R.drawable.destinasi_6, R.drawable.destinasi_7, R.drawable.destinasi_8, R.drawable.destinasi_9, R.drawable.destinasi_10};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
